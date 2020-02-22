@@ -1,0 +1,21 @@
+package LogintoChrome;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class LoginChrome {
+	
+	
+			public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ssinha\\Desktop\\driver\\chromedriver.exe");
+			
+		WebDriver driver=new ChromeDriver();
+		   driver.manage().window().maximize();
+		   driver.get("https://au.unleashedsoftware.com/v2/");
+		   driver.findElement(By.id("username")).sendKeys("qa+sinha@unl.sh");
+			driver.findElement(By.id("password")).sendKeys("sw1986@TI");
+
+}
+}
